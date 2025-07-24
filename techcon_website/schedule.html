@@ -3,33 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Schedule - TechCon 2024</title>
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    caption {
-      font-weight: bold;
-      margin-bottom: 8px;
-      font-size: 1.2em;
-    }
-
-    th, td {
-      border: 1px solid #000;
-      padding: 8px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
+  <title>Register - TechCon 2024</title>
 </head>
 <body>
   <header>
-    <h1>Conference Schedule</h1>
+    <h1> Register for TechCon 2024</h1>
     <nav>
       <a href="index.html">Home</a> |
       <a href="about.html">About</a> |
@@ -40,41 +18,33 @@
   </header>
 
   <main>
-    <table>
-      <caption>Detailed Schedule of Events for TechCon 2024</caption>
-      <thead>
-        <tr>
-          <th scope="col">Time</th>
-          <th scope="col">Session</th>
-          <th scope="col">Speaker</th>
-          <th scope="col">Location</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>9:00 AM</td>
-          <td>Opening Keynote</td>
-          <td>Dr. Ada Quantum</td>
-          <td>Main Hall</td>
-        </tr>
-        <tr>
-          <td>10:30 AM</td>
-          <td>Cybersecurity in 2024</td>
-          <td>Elena Codewell</td>
-          <td>Room 204</td>
-        </tr>
-        <tr>
-          <td>1:00 PM</td>
-          <td>Future of Cloud Tech</td>
-          <td>Raj Patel</td>
-          <td>Room 101</td>
-        </tr>
-      </tbody>
-    </table>
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+      <label for="name">Full Name:</label><br/>
+      <input type="text" id="name" name="name" required><br/><br/>
+
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email" required><br/><br/>
+
+      <label for="password">Create Password:</label><br/>
+      <input type="password" id="password" name="password" required><br/><br/>
+
+      <label for="ticket">Ticket Type:</label><br/>
+      <select id="ticket" name="ticket">
+        <option value="standard">Standard</option>
+        <option value="vip">VIP</option>
+        <option value="student">Student</option>
+      </select><br/><br/>
+
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I agree to the terms and conditions</label><br/><br/>
+
+      <button type="submit">Register Now</button>
+    </form>
   </main>
 
   <footer>
-  <p>&copy; 2024 TechCon. All rights reserved. Copyright TechCon 2024.</p>
-</footer>
+    <p>Copyright &copy; 2024 TechCon. All rights reserved.</p>
+  </footer>
 </body>
 </html>
