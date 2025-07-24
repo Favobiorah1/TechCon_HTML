@@ -3,11 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Register - TechCon 2024</title>
+  <title>Schedule - TechCon 2024</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1> Register for TechCon 2024</h1>
+    <h1>Conference Schedule</h1>
     <nav>
       <a href="index.html">Home</a> |
       <a href="about.html">About</a> |
@@ -18,33 +34,40 @@
   </header>
 
   <main>
-    <h2>Registration Form</h2>
-    <form action="#" method="POST">
-      <label for="name">Full Name:</label><br/>
-      <input type="text" id="name" name="name" required><br/><br/>
-
-      <label for="email">Email:</label><br/>
-      <input type="email" id="email" name="email" required><br/><br/>
-
-      <label for="password">Create Password:</label><br/>
-      <input type="password" id="password" name="password" required><br/><br/>
-
-      <label for="ticket">Ticket Type:</label><br/>
-      <select id="ticket" name="ticket">
-        <option value="standard">Standard</option>
-        <option value="vip">VIP</option>
-        <option value="student">Student</option>
-      </select><br/><br/>
-
-      <input type="checkbox" id="terms" name="terms" required>
-      <label for="terms">I agree to the terms and conditions</label><br/><br/>
-
-      <button type="submit">Register Now</button>
-    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Session</th>
+          <th>Speaker</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9:00 AM</td>
+          <td>Opening Keynote</td>
+          <td>Dr. Ada Quantum</td>
+          <td>Main Hall</td>
+        </tr>
+        <tr>
+          <td>10:30 AM</td>
+          <td>Cybersecurity in 2024</td>
+          <td>Elena Codewell</td>
+          <td>Room 204</td>
+        </tr>
+        <tr>
+          <td>1:00 PM</td>
+          <td>Future of Cloud Tech</td>
+          <td>Raj Patel</td>
+          <td>Room 101</td>
+        </tr>
+      </tbody>
+    </table>
   </main>
 
   <footer>
-    <p>Copyright &copy; 2024 TechCon. All rights reserved.</p>
+    <p>&copy; 2024 TechCon. All rights reserved.</p>
   </footer>
 </body>
 </html>
